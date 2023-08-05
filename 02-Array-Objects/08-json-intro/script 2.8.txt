@@ -1,0 +1,42 @@
+/*
+
+Javascript object notation- lighteight data interchange format
+
+storing data in simple human readbale format
+
+
+*/
+
+
+const post = {
+    id: 1,
+    title: "Post 1",
+    body: "this is the body"
+};
+
+//convert to Json string
+const str = JSON.stringify(post);
+
+//parse json
+const obj = JSON.parse(str);
+
+const posts = [
+    {
+        id: 1,
+        title: "Post 1",
+        body: "this is the body"
+    },
+    {
+        id: 2,
+        title: "Post 2",
+        body: "this is the body"
+    }    
+]
+
+const str2 = JSON.stringify(posts)
+
+
+
+
+
+console.log(str2)

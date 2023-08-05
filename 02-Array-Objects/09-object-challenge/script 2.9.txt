@@ -1,0 +1,43 @@
+//step 1
+const library = [
+    {
+        title: "Title",
+        author: "Me",
+        status: {
+            own: true,
+            reading: false,
+            read: false,        
+        },
+    },
+    {
+        title: "Title2",
+        author: "Me2",
+        status: {
+            own: true,
+            reading: false,
+            read: false,        
+        },
+    },
+    {
+        title: "Title3",
+        author: "Me3",
+        status: {
+            own: true,
+            reading: false,
+            read: false,        
+        },
+    },
+];
+
+// Step 2
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+//step 3
+const {title: firstBook} = library[0];
+
+//step 4
+const str = JSON.stringify(library);
+
+console.log(str);
