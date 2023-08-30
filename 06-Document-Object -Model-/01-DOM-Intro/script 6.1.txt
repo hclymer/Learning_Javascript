@@ -1,0 +1,28 @@
+//what is the document object model
+//programming interface for web/html elements
+//structure that we can interact with via JavaScript
+//includes tags, attributes, text nodes, etc
+//represented as a tree structure
+
+
+//gets html text with tags
+console.log(document.body.innerHTML);
+//gets just text
+console.log(document.body.innerText);
+//gets the links on a page
+console.log(document.links[0]);
+
+// changes the entire body tag
+// document.body.innerHTML = "<h1>Hello world</h1>";
+
+//inserts at the end of the document
+document.write("Hello from JS")
+
+//selects by id
+console.log(document.getElementById('main'));
+const main = document.getElementById('main');
+main.innerHTML = '<h1>Hello from main</h1>'
+
+
+//#
+document.querySelector('#main h1'.innerText="hello")
